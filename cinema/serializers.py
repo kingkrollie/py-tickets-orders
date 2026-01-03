@@ -96,12 +96,6 @@ class TicketSeatsSerializer(serializers.ModelSerializer):
         fields = ("row", "seat")
 
 
-class TicketDestinationSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Ticket
-        fields = ("row", "seat", "movie_session")
-
-
 class TicketOrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ticket
